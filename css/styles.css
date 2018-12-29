@@ -1,0 +1,172 @@
+/*Color Palette
+#DBDBDB lightgrey
+#D1D1D1 darkergrey
+#636363 next darkergrey
+#4C4C4C darkest grey
+#3791A3 blue
+*/
+
+
+
+/*Global styles
+----------------------------*/
+/* Box-Model Fix apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*-*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: normal;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  font-size: 30px;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+}
+a {
+  color: #4C4C4C;
+}
+a:hover {
+  text-decoration: none; /*removes underline*/
+}
+p {
+  text-align: justify;
+  font-size: 16px;
+}
+/* .uppercase {
+  text-transform: uppercase;
+} */
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 90px 50px;
+  overflow: hidden;
+}
+
+
+/*Navigation
+----------------------------*/
+nav {
+  background: #4C4C4C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+}
+
+
+/*Header & Footer
+----------------------------*/
+header {
+  text-align: center;
+  color: #D1D1D1;
+  background: #4C4C4C;
+}
+footer {
+  background: #4C4C4C;
+  color: white;
+}
+/* header h1, header h2 {
+  color: #DBDBDB;
+  margin: 0;
+} */
+main h2 {
+  text-align: center;
+}
+.profile-img {
+  width: 300px;
+  border-radius: 50%; /*image must be a square initially for this to create a circluar effect */
+}
+.btn {
+  text-decoration: none;
+  background: #636363;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px; /*padding is better for links (than margin) as it allows for a larger clickable space */
+  display: inline-block;
+  font-size: 30px;
+}
+
+/*Section background colors
+----------------------------*/
+.about {
+  background-color: #D1D1D1;
+}
+.work {
+  background-color: #DBDBDB;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+.education {
+  background: linear-gradient(rgba(76, 76, 76, 0.7), rgba(76, 76, 76, 1)),
+              url(https://www.dentons.com/-/media/images/website/background-images/offices/new-orleans/new_orleans-1.jpg) no-repeat fixed;
+  background-size: cover;
+  color: white;
+}
+.certificates {
+  background-color: #DBDBDB;
+}
+
+
+
+
+/*Media Queries
+----------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    text-align: justify;
+  }
+}
+@media (max-width: 899px) {
+  .profile-img {
+    width: 200px;
+  }
+}
