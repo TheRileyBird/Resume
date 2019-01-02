@@ -87,6 +87,10 @@ header {
   color: #D1D1D1;
   background: #4C4C4C;
 }
+.header-about a {
+  text-decoration: none;
+  color: white;
+}
 footer {
   background: #4C4C4C;
   color: white;
@@ -99,7 +103,7 @@ main h2 {
   text-align: center;
 }
 .profile-img {
-  width: 300px;
+  width: 400px;
   border-radius: 50%; /*image must be a square initially for this to create a circluar effect */
 }
 .btn {
