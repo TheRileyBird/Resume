@@ -85,9 +85,9 @@ nav a {
 header {
   text-align: center;
   color: #D1D1D1;
-  background: #4C4C4C;
+/*   background: #4C4C4C; */
   background-color: #202227;
-  background-image: url(/images/matrix.jpg);
+  background-image: url(../images/matrix.jpg);
   background-position: top left;
   background-repeat: repeat-x;
   background-size: cover;
