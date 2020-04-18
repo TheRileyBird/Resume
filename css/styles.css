@@ -86,6 +86,12 @@ header {
   text-align: center;
   color: #D1D1D1;
   background: #4C4C4C;
+  background-color: #202227;
+  background-image: url(/images/matrix.jpg);
+  background-position: top left;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: animatedBackground 120s linear infinite;
 }
 .header-about a {
   text-decoration: none;
